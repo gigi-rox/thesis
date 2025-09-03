@@ -1,0 +1,117 @@
+================================================================================
+DICE EXPERIMENT - LATENT VISUAL PERSUASION FRAMEWORK
+ANALISI STATISTICA COMPLETA
+================================================================================
+
+EXECUTIVE SUMMARY
+--------------------------------------------------
+• Partecipanti totali: 135
+• Interazioni analizzate: 788
+• Ipotesi H2 supportata: SÌ
+• RISULTATO: Le immagini con attributi visivi latenti generano significativamente
+  più engagement (dwell time) in entrambi i contesti testati.
+
+METODOLOGIA
+--------------------------------------------------
+• Design: Between-subjects experiment (2x2 factorial)
+• Variabili indipendenti: Condition (Control/Treatment) × Feed Type (A/B)
+• Variabile dipendente: Dwell Time (secondi)
+• Correzione per confronti multipli: Bonferroni (α = 0.025)
+
+IDENTIFICAZIONE POST SPERIMENTALI
+--------------------------------------------------
+Feed A (Creators & Celebrities):
+  • Post ID 1: TREATMENT
+  • Post IDs 0, 2, 3, 4: CONTROL
+Feed B (Non-Profits & Religious Organizations):
+  • Post ID 9: TREATMENT
+  • Post IDs 5, 6, 7, 8: CONTROL
+
+RISULTATI PRINCIPALI
+--------------------------------------------------
+
+Feed A (Creators):
+  Control: M = 2.485s (SD = 1.951, n = 331)
+  Treatment: M = 7.231s (SD = 4.445, n = 82)
+  Test: Mann-Whitney U test (non-parametrico)
+  Statistica: 23179.0000
+  p-value: 0.000000
+  Significativo: SÌ
+  Effect size: 0.4886
+  Miglioramento: +191.0%
+  Significatività pratica: SÌ
+
+Feed B (Non-Profits):
+  Control: M = 2.852s (SD = 2.704, n = 300)
+  Treatment: M = 9.095s (SD = 6.180, n = 75)
+  Test: Mann-Whitney U test (non-parametrico)
+  Statistica: 19259.0000
+  p-value: 0.000000
+  Significativo: SÌ
+  Effect size: 0.4926
+  Miglioramento: +218.9%
+  Significatività pratica: SÌ
+
+VERIFICA ASSUNZIONI
+--------------------------------------------------
+
+Feed A:
+  Normalità Control: W = 0.7823, p = 0.0000
+  Normalità Treatment: W = 0.9319, p = 0.0003
+  Omogeneità varianze: W = 73.3928, p = 0.0000
+  Test parametrico appropriato: NO
+
+Feed B:
+  Normalità Control: W = 0.6330, p = 0.0000
+  Normalità Treatment: W = 0.8356, p = 0.0000
+  Omogeneità varianze: W = 46.9899, p = 0.0000
+  Test parametrico appropriato: NO
+
+ANALISI DI ROBUSTEZZA
+--------------------------------------------------
+
+Feed A Bootstrap (1000 iterations):
+  Differenza media: 4.7240s
+  95% CI: [3.7774, 5.7221]
+  CI esclude zero: SÌ
+
+Feed B Bootstrap (1000 iterations):
+  Differenza media: 6.2346s
+  95% CI: [4.9817, 7.7191]
+  CI esclude zero: SÌ
+
+LIMITAZIONI E CONSIDERAZIONI
+--------------------------------------------------
+• Campione di convenienza (studenti universitari)
+• Ambiente sperimentale controllato (alta validità interna)
+• Generalizzabilità limitata ad altri contesti
+• Effetto di novelty possibile nei trattamenti
+
+IMPLICAZIONI TEORICHE
+--------------------------------------------------
+• Supporto empirico per il Latent Visual Persuasion Framework
+• Evidenza causale dell'effetto degli attributi visivi latenti
+• Consistenza cross-categoria (Creators vs Non-Profits)
+• Validazione del processing periferico nell'ELM
+
+IMPLICAZIONI MANAGERIALI
+--------------------------------------------------
+• Investimento in ottimizzazione visiva AI-driven
+• Personalizzazione contenuti per categoria target
+• Implementazione di sistemi di testing visuale automatizzati
+• Formazione team creative su principi neuroestetici
+
+FUTURE RESEARCH DIRECTIONS
+--------------------------------------------------
+• Replicazione su campioni più ampi e diversificati
+• Analisi longitudinale degli effetti
+• Testing su altre metriche di engagement (likes, comments, shares)
+• Investigazione meccanismi neurali sottostanti
+• Estensione ad altre piattaforme social
+
+APPENDICE TECNICA
+--------------------------------------------------
+• Software utilizzato: Python, SciPy, Plotly
+• Soglia di significatività: α = 0.05 (corretta: 0.025)
+• Potenza statistica media: ~0.95
+• Data analisi: 2025-09-03 16:05

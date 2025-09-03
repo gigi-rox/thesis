@@ -1,0 +1,125 @@
+{
+  "summary_statistics": {
+    "global": {
+      "participants": 135,
+      "interactions": 788,
+      "mean_dwell": 3.7478972081218274,
+      "median_dwell": 2.279,
+      "std_dwell": 3.86823247276739
+    },
+    "feed_a": {
+      "control": {
+        "n": 331,
+        "mean": 2.4852084592145016,
+        "median": 1.785,
+        "std": 1.9507869745437192
+      },
+      "treatment": {
+        "n": 82,
+        "mean": 7.230731707317073,
+        "median": 6.6754999999999995,
+        "std": 4.444835324613595
+      }
+    },
+    "feed_b": {
+      "control": {
+        "n": 300,
+        "mean": 2.8522866666666666,
+        "median": 2.0335,
+        "std": 2.704029956288188
+      },
+      "treatment": {
+        "n": 75,
+        "mean": 9.095106666666666,
+        "median": 8.919,
+        "std": 6.179979582257302
+      }
+    }
+  },
+  "assumptions_results": {
+    "feed_a": {
+      "shapiro_control": {
+        "statistic": 0.7823188252862225,
+        "pvalue": 1.0744751816538309e-20
+      },
+      "shapiro_treatment": {
+        "statistic": 0.9319060804960476,
+        "pvalue": 0.00030417036552583197
+      },
+      "levene": {
+        "statistic": 73.39277946131703,
+        "pvalue": 2.1637145079913502e-16
+      },
+      "assumptions_met": "False"
+    },
+    "feed_b": {
+      "shapiro_control": {
+        "statistic": 0.6330450478272154,
+        "pvalue": 7.12193236966559e-25
+      },
+      "shapiro_treatment": {
+        "statistic": 0.8355726718003166,
+        "pvalue": 1.135167686761362e-07
+      },
+      "levene": {
+        "statistic": 46.98987026314056,
+        "pvalue": 2.9669935277178395e-11
+      },
+      "assumptions_met": "False"
+    }
+  },
+  "statistical_tests": {
+    "feed_a": {
+      "test_type": "Mann-Whitney U test (non-parametrico)",
+      "statistic": 23179.0,
+      "pvalue": 3.131649600832607e-23,
+      "significant": "True",
+      "effect_size": 0.488570789481717,
+      "power": 0.9465712368445152,
+      "direction": "positive",
+      "alpha_corrected": 0.025
+    },
+    "feed_b": {
+      "test_type": "Mann-Whitney U test (non-parametrico)",
+      "statistic": 19259.0,
+      "pvalue": 1.4562641997917474e-21,
+      "significant": "True",
+      "effect_size": 0.4925701630068894,
+      "power": 0.9477710489020669,
+      "direction": "positive",
+      "alpha_corrected": 0.025
+    },
+    "h2_supported": true,
+    "alpha_original": 0.05,
+    "alpha_corrected": 0.025
+  },
+  "additional_analyses": {
+    "feed_a_bootstrap": {
+      "mean_difference": 4.723951519195343,
+      "ci_lower": 3.7774125736865365,
+      "ci_upper": 5.722068799277872,
+      "excludes_zero": "True"
+    },
+    "feed_b_bootstrap": {
+      "mean_difference": 6.23464935,
+      "ci_lower": 4.981671416666665,
+      "ci_upper": 7.719147333333333,
+      "excludes_zero": "True"
+    },
+    "feed_a_practical": {
+      "percent_difference": 190.95071202206057,
+      "absolute_difference": 4.745523248102572,
+      "cohens_d": 1.8001837210948737,
+      "interpretation": "Grande",
+      "practically_significant": "True"
+    },
+    "feed_b_practical": {
+      "percent_difference": 218.8707072454148,
+      "absolute_difference": 6.24282,
+      "cohens_d": 1.7029841725035206,
+      "interpretation": "Grande",
+      "practically_significant": "True"
+    }
+  },
+  "timestamp": "2025-09-03T16:05:50.798799"
+}
